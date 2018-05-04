@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none; }
+
+b {
+  color: #02b875; }
+
+header.vendelo {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  animation-duration: 1s;
+  animation-name: aparece; }
+
+header.vendelo2 {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/vendelo-por-mi-fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white;
+  display: none;
+  z-index: 9;
+  top: 0;
+  position: fixed; }
+
+  .aparecio{
+animation-name: aparece; 
+animation-duration: 1s;   
+  }
+
+nav.menu {
+  width: 100%;
+  height: 11vh; }
+
+nav.menu a {
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px;
+  margin-top: 0px;
+  display: none; }
+
+nav.menu a.boton-resaltado {
+  background-color: white;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  color: #0a4b33; }
+
+a.boton-resaltado2 {
+  padding: 20px;
+  display: inline-block;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: .3s ease-in-out all; }
+
+a.boton-resaltado3 {
+  padding: 8px 40px;
+  display: inline-block;
+  border-radius: 20px;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: .3s ease-in-out all; }
+
+a.boton-resaltado2:hover {
+  background-color: white;
+  color: #0a4b33; }
+
+a.boton-resaltado3:hover {
+  background-color: white;
+  color: #0a4b33; }
+
+nav .logo {
+  width: 100%;
+  height: 100%;
+  background: url(../img/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  float: left;
+  margin: 20px auto; }
+
+img.logo {
+  width: 41%;
+  height: 100%;
+  background: url(../img/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.texto-vendelo2 {
+  display: block;
+  width: 90%;
+  max-width: 970px;
+  margin: 0 auto;
+  clear: both;
+  margin-top: 80px;
+  text-align: center;
+  line-height: 37px; }
+
+  
+
+nav .links {
+  float: right;
+  margin: 20px; }
+
+.texto-vendelo {
+  display: block;
+  width: 90%;
+  max-width: 970px;
+  margin: 0 auto;
+  clear: both;
+  margin-top: 27vh;
+  text-align: center;
+  line-height: 37px; }
+
+.texto-vendelo a {
+  background: white;
+  border: 1px solid white;
+  padding: 6px 40px;
+  color: #0a4b33;
+  border-radius: 40px;
+  display: block;
+  max-width: 160px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.texto-vendelo h2 {
+  font-size: 1.3rem;
+  font-weight: lighter; }
+
+.texto-vendelo h1 {
+  font-size: 2rem;
+  max-width: 750px;
+  line-height: 2.5rem;
+  margin: 0 auto; }
+
+.carros-vendelo {
+  margin-top: 20px;
+  padding: 10px;
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.carros-vendelo h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #02b875; }
+
+form.carros-vendelo-opciones {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+form input {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  height: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  font-family:  helvetica;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 10px;
+  }
+
+.select-wrapper, .text-input-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+  /* border: 1px solid #d9d9d9; */
+  background-color: white;
+  display: inline-block;
+  text-align: center; }
+
+form select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  font-family:  helvetica;
+  font-size: 17px;
+  color: #6d6d6d;
+  margin-top: 10px;
+  font-weight: lighter;
+  }
+
+option {
+  text-align: center; }
+
+.imagen-auto {
+  width: 100%;
+  height: 185px;
+  background: #02b875; }
+
+.item {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #d4d4d4;
+  margin-bottom: 10px;
+  display: inline-block;
+  }
+
+.item h3 {
+  text-align: center;
+  background: #3cb9ae;
+  color: white;
+  padding: 4px; }
+
+.item h2 {
+  text-align: center;
+  background: white;
+  color: #02b875;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 23px;
+  padding: 4px;
+  }
+
+.item ul {
+  padding: 10px; }
+
+.item li {
+  padding: 3px;
+  text-align: justify;
+  margin-top: 3px; }
+
+.item a {
+  background-color: #02b875;
+  color: white;
+  padding: 11px;
+  display: block;
+  margin: 17px auto;
+  max-width: 140px;
+  text-align: center;
+  border-radius: 10px;
+  transition: .3s ease-in-out all; }
+
+.item a:hover {
+  background-color: #2d2d2d; }
+
+#boton-resaltado {
+  animation-duration: 2.5s;
+  animation-name: flota;
+  animation-iteration-count: infinite;
+  animation-delay: 1s; }
+
+@keyframes flota {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@keyframes aparece {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.texto-vendelo2 p {
+  line-height: 1.4rem;
+  text-align: justify;
+  display: block;
+  font-family: helvetica;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.texto-vendelo2 b {
+  color: white; }
+
+  .boton-cancelar{padding: 10px;border-radius: 50%;background-color: white;color: black!important;display: block;width: 42px;height: 42px;text-align: center;}
+
+@media screen and (min-width: 600px) {
+  .item {
+    width: 30.3%;
+    margin: 10px; }
+
+  .select-wrapper, .text-input-wrapper {
+    width: 32%; }
+
+  form select {
+    margin-top: 0px;
+    height: 42px; }
+
+  form.carros-vendelo-opciones {
+    width: 90%; }
+
+  .texto-vendelo h1 {
+    font-size: 3rem;
+    line-height: 55px; }
+
+  .texto-vendelo h2 {
+    font-size: 2.1rem; }
+
+  nav.menu a {
+    display: inline-block; }
+
+  nav .logo {
+    width: 250px;
+    height: 75px;
+    background-size: cover;
+    margin: 20px;
+    } }
+/* Controles de paginacion */
+.controls-pagination {
+  padding: 1rem;
+  font-size: 0.1px;
+  text-align: justify; }
+
+.controls-pagination:after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+.mixitup-page-list,
+.mixitup-page-stats {
+  margin: 0 auto; }
+
+.mixitup-page-list {
+  text-align: center; }
+
+.mixitup-page-stats {
+  font-size: .9rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'helvetica', arial, sans-serif;
+  display: none; }
+
+.mixitup-control {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  margin-right: 1px;
+  cursor: pointer;
+  font-size: .9rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'helvetica', arial, sans-serif;
+  transition: color 150ms, border-color 150ms;
+  vertical-align: middle;
+  border-radius: 31% !important; }
+
+.mixitup-control:first-child {
+  border-radius: 3px 0 0 3px; }
+
+.mixitup-control:last-child {
+  border-radius: 0 3px 3px 0; }
+
+.mixitup-control:not(.mixitup-control-active):hover {
+  color: #757575; }
+
+.mixitup-control-active {
+  cursor: default;
+  background: #02b875;
+  color: white; }
+
+.mixitup-control:disabled {
+  background: #eaeaea;
+  color: #aaa;
+  cursor: default; }
+
+.mixitup-control-truncation-marker {
+  background: transparent;
+  line-height: 2.2em; }
+
+/* Termina paginacion */
+.ano, .kilometraje, .transmision {
+  content: "";
+  width: 10px;
+  height: 5px;
+  padding: 10px;
+  display: inline-block;
+  float: left;
+  clear: both;
+  margin-right: 6px; }
+
+.kilometraje {
+  background: url(../img/kilometraje.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.ano {
+  background: url(../img/ano.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.transmision {
+  background: url(../img/transmision.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cotiza tu auto deseado - Véndelo Por Mi</title>
+  <link rel="stylesheet" href="../css/bulma.css">
+  <link rel="stylesheet" href="css/estilos-formulario.css">
+
+ 
+  
+</head>
+<body>
+  
+
+
+
+  <div class="vender-auto" id="vender" style="height: 100vh;">
+    <h1>Déjanos tus datos para brindarte más información</h1>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='gracias.html';}"></iframe>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfJi3cu5PE1DI65oGtE4swhGZp7_e_pG1bj5axU6YKGv_NI9A/formResponse"  method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <input type="text" placeholder="Nombre y Apellido" name="entry.117487798" value="" required>
+      <input type="number" placeholder="Teléfono" name="entry.135850688" value="" required>
+      <input type="email" placeholder="E-mail" name="entry.846958910" value="" required>
+      
+
+<select name="entry.325106929" id="entry_1643416673" aria-required="true" required>
+  <option id="opcion" > Auto Elegido</option>
+</select>
+
+      <input type="submit" class="boton-form" name="submit" value="Enviar">
+    </form>
+  </div>
+
+
+<script type="text/javascript">
+
+var url_string = window.location; //window.location.href
+var url = new URL(url_string);
+var valor = url.searchParams.get("valor");
+console.log(valor);
+var opcion= document.getElementById("opcion");
+
+opcion.innerHTML= valor
+opcion.setAttribute("value",valor)
+opcion.setAttribute("selected","true")
+
+
+
+
+
+</script>
+
+    
+
+
+</body>
+</html>
