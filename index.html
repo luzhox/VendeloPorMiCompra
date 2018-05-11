@@ -81,8 +81,20 @@
     <section class="carros-vendelo" id="autos-vendelo">
         <h1>Encuentra el carro ideal para ti</h1>
         <form class="carros-vendelo-opciones">
-            <fieldset data-filter-group class="text-input-wrapper">
-                <input type="text" class="text" data-search-attribute="data-mark" placeholder="¿Qué auto buscas?">
+          
+             <fieldset data-filter-group class="select-wrapper">
+
+                <select name="" id="" class="opciones">
+                    <option value="" selected>Rango de precios</option>
+                    <option value=".rangocero">5,000-10,000</option>
+                    <option value=".rangouno">10,000-12,000</option>
+                    <option value=".rangodos">12,000-15,000</option>
+                    <option value=".rangotres">15,000-20,000</option>
+                    <option value=".rangocuatro">20,000-25,000</option>
+                    <option value=".rangocinco">25,000-30,000</option>
+                    <option value=".rangoseis">>30,000</option>
+
+                </select>
             </fieldset>
             <fieldset data-filter-group class="select-wrapper">
 
@@ -115,20 +127,10 @@
 
                 </select>
             </fieldset>
-            <fieldset data-filter-group class="select-wrapper">
-
-                <select name="" id="" class="opciones">
-                    <option value="" selected>Rango de precios</option>
-                    <option value=".rangocero">5,000-10,000</option>
-                    <option value=".rangouno">10,000-12,000</option>
-                    <option value=".rangodos">12,000-15,000</option>
-                    <option value=".rangotres">15,000-20,000</option>
-                    <option value=".rangocuatro">20,000-25,000</option>
-                    <option value=".rangocinco">25,000-30,000</option>
-                    <option value=".rangoseis">>30,000</option>
-
-                </select>
+              <fieldset data-filter-group class="text-input-wrapper">
+                <input type="text" class="text" data-search-attribute="data-mark" placeholder="¿Qué auto buscas?">
             </fieldset>
+           
         </form>
 
         <div class="autos">
@@ -169,7 +171,7 @@
                                 <li>
                                     <div class="transmision"></div>
                                     <b>Transmisión:</b> Automática</li>
-                                <a id="comprar-boton5" target="_blank" href="formulario.html?Hyundai Avante" data-modelo="Toyota Rav4">Más información</a>
+                                <a id="comprar-boton5" target="_blank" href="formulario.html?valor=Hyundai Avante" data-modelo="Hyundai Avante">Más información</a>
                             </ul>
                         </div>
 
@@ -187,7 +189,7 @@
                                     <li>
                                         <div class="transmision"></div>
                                         <b>Transmisión:</b> Secuencial</li>
-                                    <a id="comprar-boton5" target="_blank" href="formulario.html?Kia Cerato" data-modelo="Toyota Rav4">Más información</a>
+                                    <a id="comprar-boton5" target="_blank" href="formulario.html?valor=Kia Cerato" data-modelo="Toyota Rav4">Más información</a>
                                 </ul>
                             </div>
 
@@ -208,7 +210,7 @@
                     <li>
                         <div class="transmision"></div>
                         <b>Transmisión:</b> Automática</li>
-                    <a id="comprar-boton5" target="_blank" href="formulario.html?Toyota Rav4" data-modelo="Toyota Rav4">Más información</a>
+                    <a id="comprar-boton5" target="_blank" href="formulario.html?valor=Toyota Rav4" data-modelo="Toyota Rav4">Más información</a>
                 </ul>
             </div>
             <!-- Grupo 1 -->
@@ -232,24 +234,7 @@
 
 
 
-            <div class="mix rangodos hyundai item" data-mark="hyundai,11000,10000, elantra, hyundai elantra">
-                <div class="imagen-auto" style="background-image:url(img/carros/elantra2011.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
-                <h3>Hyundai Elantra</h3>
-                <h2>Precio: $11,000</h2>
-                <ul>
-                    <li>
-                        <div class="ano"></div>
-                        <b>Año:</b> 2011</li>
-                    <li>
-                        <div class="kilometraje"></div>
-                        <b>Kilometraje:</b> 64,689</li>
-                    <li>
-                        <div class="transmision"></div>
-                        <b>Transmisión:</b> Mecánica</li>
-                    <a id="comprar-boton42" target="_blank" href="formulario.html?valor=Hyundai Elantra" data-modelo="Hyundai Elantra">Más información</a>
-                </ul>
-            </div>
-
+          
 
             <div class="mix rangocero hyundai item" data-mark="hyundai,21000,20000,elantra, hyundai elantra">
                 <div class="imagen-auto" style="background-image:url(img/carros/elantra2010.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
@@ -375,24 +360,6 @@
             </div>
 
 
-
-            <div class="mix rangocinco jeep item" data-mark="jeep,20000,25000, grand cherokee, jeep grand cherokee, cherokee">
-                <div class="imagen-auto" style="background-image:url(img/carros/jeep.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
-                <h3>Jeep Grand Cherokee Limited</h3>
-                <h2>Precio: $22,300</h2>
-                <ul>
-                    <li>
-                        <div class="ano"></div>
-                        <b>Año:</b> 2012</li>
-                    <li>
-                        <div class="kilometraje"></div>
-                        <b>Kilometraje:</b> 62,084</li>
-                    <li>
-                        <div class="transmision"></div>
-                        <b>Transmisión:</b> Automática</li>
-                    <a id="comprar-boton4" target="_blank" href="#" data-modelo="Jeep Grand Cherokee">Más información</a>
-                </ul>
-            </div>
 
 
             <div class="mix rangodos jeep item" data-mark="jeep,14000,15000, compass, jeep compass">
@@ -520,23 +487,6 @@
             </div>
 
 
-            <div class="mix rangoseis audi item" data-mark="audi,30000,audi q2, q2">
-                <div class="imagen-auto" style="background-image:url(img/carros/audiq2.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
-                <h3>Audi Q2</h3>
-                <h2>Precio: $31,000</h2>
-                <ul>
-                    <li>
-                        <div class="ano"></div>
-                        <b>Año:</b> 2017</li>
-                    <li>
-                        <div class="kilometraje"></div>
-                        <b>Kilometraje:</b>3,739</li>
-                    <li>
-                        <div class="transmision"></div>
-                        <b>Transmisión:</b> Automática</li>
-                    <a id="comprar-boton10" target="_blank" href="formulario.html?valor=Audi Q2" data-modelo="Audi Q2">Más información</a>
-                </ul>
-            </div>
 
 
 
@@ -1232,6 +1182,25 @@
                     <a id="comprar-boton39" target="_blank" href="formulario.html?valor=Nissan Tiida" data-modelo="Nissan Tiida">Más información</a>
                 </ul>
             </div>
+
+                 <div class="mix rangodos nissan item" data-mark="nissan,11000,sentra, nissan sentra">
+                <div class="imagen-auto" style="background-image:url(img/carros/nissanSentra.jpg); background-size:cover; background-position:center; background-repeat:no-repeat;"></div>
+                <h3>Nissan Sentra</h3>
+                <h2>Precio: $14,499</h2>
+                <ul>
+                    <li>
+                        <div class="ano"></div>
+                        <b>Año:</b> 2016</li>
+                    <li>
+                        <div class="kilometraje"></div>
+                        <b>Kilometraje:</b> 30,563</li>
+                    <li>
+                        <div class="transmision"></div>
+                        <b>Transmisión:</b> Mecánica</li>
+                    <a id="comprar-boton39" target="_blank" href="formulario.html?valor=Nissan Sentra" data-modelo="Nissan Sentra">Más información</a>
+                </ul>
+            </div>
+
 
 
 
